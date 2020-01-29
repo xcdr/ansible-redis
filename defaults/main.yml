@@ -1,0 +1,6 @@
+---
+redis_params:
+  - key: "bind"
+    value: "127.0.0.1 ::1"
+  - key: "port"
+    value: "6379"

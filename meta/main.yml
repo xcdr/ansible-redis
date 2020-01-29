@@ -1,0 +1,21 @@
+galaxy_info:
+  role_name: redis
+  author: xcdr
+  description: Ansible role for Redis
+  license: MIT
+  min_ansible_version: 2.6
+
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - redis
+    - debian
+    - ubuntu
+
+dependencies: []

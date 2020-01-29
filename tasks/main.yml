@@ -1,0 +1,12 @@
+---
+- name: Install the redis package
+  apt: name=redis
+
+- name: Configure redis
+  lineinfile:
+    dest: /etc/redis/redis.conf
+    regexp: "^{{ item.key }} *"
+    line: "{{ item.key }} {{ item.value }}"
+  with_items: "{{ redis_params }}"
+  notify:
+    - restart redis
